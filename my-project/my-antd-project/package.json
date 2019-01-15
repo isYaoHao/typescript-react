@@ -86,7 +86,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && node fs-test"
+      "pre-commit": "lint-staged && node ./fs-test.js"
     }
   },
   "lint-staged": {
