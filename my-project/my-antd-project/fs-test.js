@@ -32,7 +32,7 @@ function doAppendString(path) {
         fileTypeArray.includes(fileType) &&
         newString.substr(0, 10) !== appendString.substr(0, 10)
       ) {
-        fs.writeFileSync(newPath, appendString, 'utf8');
+        fs.writeFileSync(newPath, appendString + newString, 'utf8');
       }
     }
   });
